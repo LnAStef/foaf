@@ -1,16 +1,25 @@
 @prefix admin: <http://webns.net/mvcb/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://raw.githubusercontent.com/LnAStef/foaf/main/foaf.ttl> a foaf:PersonalProfileDocument ;
     admin:errorReportsTo <mailto:leigh@ldodds.com> ;
     admin:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
-    foaf:maker <#me> ;
-    foaf:primaryTopic <#me> .
+    foaf:maker <https://raw.githubusercontent.com/LnAStef/foaf/main/foaf.ttl#me> ;
+    foaf:primaryTopic <https://raw.githubusercontent.com/LnAStef/foaf/main/foaf.ttl#me> .
 
 <https://raw.githubusercontent.com/LnAStef/foaf/main/foaf.ttl#me> a foaf:Person ;
     foaf:family_name "Stefanovska" ;
     foaf:givenname "Elena" ;
     foaf:homepage <https://www.facebook.com/stefanovskaelena/> ;
+    foaf:knows [ a foaf:Person ;
+            rdfs:seeAlso <https://raw.githubusercontent.com/angela-kralevska/COVID19_MK_project/master/foaf.ttl> ;
+            foaf:mbox_sha1sum "e15fec6d1e98e3daac776df3c71a9c3158ba3cd1" ;
+            foaf:name "Angela Kralevska" ],
+        [ a foaf:Person ;
+            rdfs:seeAlso <https://mjovanovik.com/foaf.ttl> ;
+            foaf:mbox_sha1sum "a32e8a2625892acc7e9a70e69c0b42b836bbe8d6" ;
+            foaf:name "Milosh Jovanovik" ] ;
     foaf:mbox_sha1sum "935652f2c0a592013536c5d43fa99209605b08a6" ;
     foaf:name "Elena Stefanovska" ;
     foaf:nick "Ellie" ;
